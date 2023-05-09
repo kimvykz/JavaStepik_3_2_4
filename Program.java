@@ -17,12 +17,9 @@ public class Program {
                 BufferedImage image = ImageIO.read(new File("may.jpg"));
                 JLabel label = new JLabel(new ImageIcon(image));
 
-
-
-
                 panel.add(label);
 
-                //JFrame.setDefaultLookAndFeelDecorated(true);
+                JFrame.setDefaultLookAndFeelDecorated(true);
                 JFrame frame = new JFrame("JPanel Example");
                 frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
                 Dimension picSize = label.getPreferredSize();
